@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: blue;
+  font-size: 13px;
+}
+.bg-white {
+  background-color: white;
+}
+.grid {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: minmax(750px, 1fr) minmax(320px, 1fr) minmax(
+      320px,
+      1fr
+    );
+  grid-template-rows: 300px 280px;
+  row-gap: 25px;
+  column-gap: 15px;
+}
+
+.scopes {
+  grid-row: 2;
+}
+.time-line {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.primary {
+  grid-column: 2;
+}
+.time-line-radius {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7px;
+}
+.time-line-content {
+  border-bottom: 1px dashed;
+}

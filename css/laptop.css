@@ -1,0 +1,277 @@
+/* Tất cả các phần tử cài đặt margin về 0 */
+* {
+  margin: 0;
+}
+
+/* Màu nền cho phần thông tin nghề nghiệp */
+.bg-grey {
+  background: linear-gradient(to right, #f7f7f7 50%, #b6ffee 50%);
+}
+
+/* Màu nền cho phần chứng chỉ và giải thưởng */
+#certificate {
+  background-color: #b6ffee;
+}
+
+/* Màu nền cho phần footer */
+#footer {
+  background-color: #b6ffee;
+}
+
+/* Cài đặt chiều rộng và căn giữa container */
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+.container-h1 {
+  padding-left: 45px;
+}
+/* Thiết lập kích thước font chung cho trang */
+body {
+  font-size: 14px;
+}
+
+/* Định dạng liên kết màu đen và loại bỏ gạch chân */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Thiết lập giao diện cho thanh điều hướng */
+.nav-bar-display {
+  display: grid;
+  grid-template-columns: 150px 200px 200px 200px 200px 200px 150px;
+  grid-template-rows: 60px;
+  place-content: center;
+}
+.nav-bar {
+  border: 1px solid whitesmoke;
+}
+.nav-tittle {
+  grid-column-start: 2;
+}
+.nav-details {
+  grid-column-start: 3;
+}
+
+.avatar {
+  position: absolute;
+  left: 50%;
+  width: 110px;
+  height: 175px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: #f7f7f7 10px solid;
+}
+
+.nav-certificate {
+  grid-column-start: 5;
+}
+
+.nav-project {
+  grid-column-start: 6;
+}
+
+/* Phần thông tin cá nhân và mục tiêu nghề nghiệp */
+.target-info {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 400px;
+}
+.focal-business {
+  margin: 3rem;
+}
+/* Phần thông tin nghề nghiệp và học vấn */
+.container-job-info {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 1fr minmax(1fr, 320);
+  justify-content: center;
+  gap: 30px;
+}
+
+.container-grid {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 75px 1fr;
+  row-gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+.container-grid i {
+  font-size: 50px;
+  color: rgb(25, 16, 16);
+  align-self: start;
+}
+::marker {
+  color: #00bfff;
+  font-size: 20px;
+}
+
+.time-info {
+  font-style: italic;
+  font-size: 13px;
+}
+
+#time-now {
+  color: #f7f7f7;
+  border-radius: 40%;
+  background-color: #00bfff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.grid-column {
+  grid-column: 5/1;
+}
+
+/* Phần sở thích */
+.grid-hobbi {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: 40px 40px;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.grid-hobbi i {
+  font-size: 18px;
+  padding: 6px;
+  align-self: flex-start;
+  text-align: center;
+  border: skyblue 2px solid;
+  color: skyblue;
+  border-radius: 50%;
+  flex: 0 1 auto;
+}
+
+/* Phần ngôn ngữ và kỹ năng */
+.span-done {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.span-none {
+  background: rgb(223, 219, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Phần chứng chỉ và giải thưởng */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 100px 100px;
+  row-gap: 20px;
+}
+
+.certificate-content {
+  display: grid;
+  grid-template-columns: 130px 400px;
+  grid-template-rows: 30px 40px;
+  column-gap: 20px;
+}
+#certificate-1 {
+  border-right: 1px solid;
+}
+
+.certificate-content img {
+  width: 100%;
+  grid-row: 1/3;
+}
+
+/* Phần dự án */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 15px;
+  justify-content: center;
+}
+
+.project-grid img {
+  width: 100%;
+  display: block;
+}
+
+.project-tittle {
+  border: #d6d6e4 1px solid;
+  justify-content: center;
+}
+
+.project-flex {
+  display: flex;
+  gap: 30px;
+  border-top: black;
+  align-items: center;
+  border: #d6d6e4 1px solid;
+  padding: 10px;
+}
+
+.project-timeline {
+  color: #f7f7f7;
+  border-radius: 40%;
+  background-color: #00bfff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.project-name {
+  color: #000000;
+}
+
+.project-table {
+  border-collapse: collapse;
+}
+
+.table-tr {
+  border: 1px solid #d6d6e4;
+}
+
+.table-tr td {
+  padding: 10px;
+}
+
+.table-td {
+  display: block;
+  width: 65px;
+}
+/* nang cao */
+.my-id {
+  display: none;
+}
+.remove-email {
+  display: none;
+}
+.view {
+  display: none;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 50%;
+  border-radius: 20%;
+}
+.view:hover {
+  background-color: lightgray;
+}
+.container-grid:hover .view {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.view-more-container {
+  grid-column: 1;
+}

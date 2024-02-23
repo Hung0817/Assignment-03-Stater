@@ -1,0 +1,16 @@
+@media screen and (max-width: 575px) {
+  .container-lg {
+    width: 90%;
+  }
+  .grid {
+    display: block;
+    margin: 20px;
+  }
+  .grid-container {
+    margin-top: 20px;
+  }
+  .scopes-padding {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+}

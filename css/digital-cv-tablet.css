@@ -1,0 +1,26 @@
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container-lg {
+    width: 95%;
+  }
+  .grid {
+    display: block;
+    margin: 20px;
+  }
+  .grid-container {
+    margin-top: 20px;
+  }
+  .display-flex {
+    width: 110%;
+  }
+  .scopes {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .scopes-padding {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  .time-line-content {
+    width: 100%;
+  }
+}
